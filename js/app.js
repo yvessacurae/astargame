@@ -3,7 +3,8 @@ import Tiles from './Tiles';
 const tiles = new Tiles();
 tiles.init();
 
-const tileMap = `<div>${tiles.tileMap}</div>`;
-console.log(tiles.tileMap)
+window.addEventListener('DOMContentLoaded', () => {
+  const tileMap = `<div>${tiles.tileMap}</div>`;
 
-document.querySelector('#app').innerHTML = tileMap;
+  document.querySelector('#app').innerHTML = tileMap;
+});
